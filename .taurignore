@@ -1,0 +1,30 @@
+# Tauri 2 development file watcher ignore list
+# Excludes generated build output and locked artifacts from triggering watcher loops and EBUSY warnings
+
+# Rust compilation output
+src-tauri/target
+src-tauri/target/
+src-tauri/target/**
+target
+target/
+target/**
+**/target/**
+**/target
+*.pdb
+*.exe
+**/*.pdb
+**/*.exe
+*.rlib
+*.rmeta
+*.d
+**/*.rlib
+**/*.rmeta
+**/*.d
+
+# Frontend compilation output
+dist/
+**/dist/**
+
+# Package dependencies
+node_modules/
+**/node_modules/**

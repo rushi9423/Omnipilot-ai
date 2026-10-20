@@ -1,0 +1,21 @@
+# Tauri 2 development file watcher ignore list for src-tauri
+# Excludes generated target directory artifacts from triggering watcher loops and EBUSY warnings
+
+# Rust compilation output
+target
+target/
+target/**
+**/target/**
+**/target
+*.pdb
+*.exe
+**/*.pdb
+**/*.exe
+*.rlib
+*.rmeta
+*.d
+**/*.rlib
+**/*.rmeta
+**/*.d
+
+

@@ -1,0 +1,25 @@
+{
+  "name": "ai-copilot",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node test/smoke.test.js && node test/clickthrough.test.js && node test/backend_health.test.js && node test/phase4_streaming.test.js && node test/gemini_streaming.test.js && node test/ollama_integration.test.js",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.12.4",
+    "lucide-react": "^1.59.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.3",
+    "@vitejs/plugin-react": "^6.1.2",
+    "esbuild": "^0.28.2",
+    "vite": "^8.3.4"
+  }
+}
